@@ -419,6 +419,13 @@
                     </li>
                 </ul>
             </div>
+            <div class="subscription">
+                <p>подпишитесь на рассылку</p>
+                <label for="mail"></label>
+                <input type="email" name="mail" id="mail" placeholder="E-mail">
+                
+                <button type="submit">Подписаться</button>
+            </div>
         </div>
     </footer>
 
@@ -434,28 +441,38 @@
     </div>
     <script src="./js/modal.js"></script>
 
-    <!-- do we need div here??????? -->
-    <div role="group"> 
-        <form action="" class="js-speaker-form">
-            <h3>
+   
+    <div> 
+        <form action="" class="form js-speaker-form">
+            <p>
                 Оставьте свои данные, мы вам перезвоним
-            </h3>
+            </p>
     
-            <label for="name">Имя</label>
-            <input type="text" name="name" id="name">
+            <div class="form-field">
+                <label for="name">Имя</label>
+                <input type="text" name="name" id="name">
+            </div>
     
-            <label for="tel">Телефон</label>
-            <input type="tel" name="tel" id="tel">
+            <div class="form-field">
+                <label for="tel">Телефон</label>
+                <input type="tel" name="tel" id="tel">  
+            </div>
     
-            <label for="mail">Почта</label>
-            <input type="email" name="mail" id="mail">
+            <div class="form-field">
+                <label for="mail">Почта</label>
+                <input type="email" name="mail" id="mail">
+            </div>
     
-            <label for="comment">Комментарий</label>
-            <input type="comment" name="comment" id="comment">
+            <div class="from-field">
+                <label for="comment">Комментарий</label>
+                <textarea name="comment" id="comment" class="comment" placeholder="Введите текст"></textarea>    
+            </div>
     
-            <input type="checkbox" name="conditions" value="conditions" id="option-conditions">
-            <label for="conditions">Соглашаюсь с рассылкой и принимаю <a href="#">Условия догвора</a>
-            </label>
+            <div class="conditions form-field">
+                <input type="checkbox" name="conditions" value="conditions" id="option-conditions">
+                <label for="conditions">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+                </label>
+            </div>
             
     
             <button type="submit">Отправить</button>

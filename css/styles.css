@@ -687,6 +687,8 @@ ol {
   height: 60px;
 }
 
+/* =========MODAL WINDOW========== */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -760,3 +762,30 @@ ol {
   height: 18px;
 }
 
+.comment {
+  resize: none;
+  width: 448px;
+  height: 120px;
+  left: 576px;
+  top: 518px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.form
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+
+  width: 448px;
+  height: 40px; 
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.conditions input[type='checkbox'] {
+}
