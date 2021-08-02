@@ -447,19 +447,25 @@
             <p>
                 Оставьте свои данные, мы вам перезвоним
             </p>
-    
+
+            <label for="name">Имя</label>
             <div class="form-field">
-                <label for="name">Имя</label>
-                <input type="text" name="name" id="name">
+                <input type="text" name="name" id="name" class="form-input">
+                <svg class="icon-name">
+                    <use href="./images/icons.svg#icon-name"></use>
+                </svg>
+                      
             </div>
     
             <div class="form-field">
                 <label for="tel">Телефон</label>
+                <span class="tel-icon"></span>
                 <input type="tel" name="tel" id="tel">  
             </div>
     
             <div class="form-field">
                 <label for="mail">Почта</label>
+                <span class="email-icon"></span>
                 <input type="email" name="mail" id="mail">
             </div>
     
