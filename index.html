@@ -448,26 +448,35 @@
                 Оставьте свои данные, мы вам перезвоним
             </p>
 
-            <label for="name">Имя</label>
-            <div class="form-field">
-                <input type="text" name="name" id="name" class="form-input">
-                <svg class="icon-name">
-                    <use href="./images/icons.svg#icon-name"></use>
-                </svg>
-                      
-            </div>
-    
-            <div class="form-field">
-                <label for="tel">Телефон</label>
-                <span class="tel-icon"></span>
-                <input type="tel" name="tel" id="tel">  
-            </div>
-    
-            <div class="form-field">
-                <label for="mail">Почта</label>
-                <span class="email-icon"></span>
-                <input type="email" name="mail" id="mail">
-            </div>
+            <label class="form-field">
+                Имя
+                <div class="input-relative">
+                    <input type="text" name="name" placeholder=" " class="form-input">
+                    <svg class="icon-name">
+                        <use href="./images/icons.svg#icon-name"></use>
+                    </svg>
+                </div>                
+            </label>
+
+            <label class="form-field">
+                Телефон
+                <div class="input-relative">
+                    <input type="tel" name="tel" placeholder=" " class="form-input">
+                    <svg class="icon-tel">
+                        <use href="./images/icons.svg#icon-tel"></use>
+                    </svg>
+                </div>
+            </label>
+
+            <label class="form-field">
+                Почта
+                <div class="input-relative">
+                    <input type="email" name="email" placeholder=" " class="form-input">
+                    <svg class="icon-email">
+                        <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
+                </div>
+            </label>
     
             <div class="from-field">
                 <label for="comment">Комментарий</label>

@@ -373,7 +373,7 @@ ol {
 .footer-address-item-tel {
   color: rgba(255, 255, 255, 0.6);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* =========PORTFOLIO PAGE========== */
@@ -409,7 +409,8 @@ ol {
 
   cursor: pointer;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn:hover,
@@ -435,7 +436,8 @@ ol {
 
 .projects-list-item-link:hover,
 .projects-list-item-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects-list-item-title {
@@ -483,12 +485,12 @@ ol {
   letter-spacing: 0.03em;
 
   opacity: 0;
-  
+
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     top 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-cards-item:hover .projects-cards-item-hover-text, 
+.projects-cards-item:hover .projects-cards-item-hover-text,
 .projects-cards-item:focus .projects-cards-item-hover-text {
   opacity: 1;
   top: 0;
@@ -673,7 +675,7 @@ ol {
   fill: #afb1b8;
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list-item-link:hover,
@@ -707,7 +709,7 @@ ol {
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%,-50%) scale(0.9);
+  transform: translate(-50%, -50%) scale(0.9);
   opacity: 0;
 }
 
@@ -720,10 +722,11 @@ ol {
   height: 581px;
 
   background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  transform: translate(-50%,-50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
   opacity: 1;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -734,13 +737,13 @@ ol {
 }
 
 .button-close-modal {
- position: absolute;
- top: 0;
- right: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
 
- display: flex;
- justify-content: center;
- align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   margin-top: 8px;
   margin-right: 8px;
@@ -748,7 +751,7 @@ ol {
   width: 30px;
   height: 30px;
 
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
@@ -756,7 +759,7 @@ ol {
 }
 
 .button-close-modal-icon {
-  display:block;
+  display: block;
 
   width: 18px;
   height: 18px;
@@ -774,25 +777,28 @@ ol {
   border-radius: 4px;
 }
 
-.form
-
-.form-field {
-  position: relative;
-  display: flex;
+.form .form-field {
+  /* position: relative; */
+  display: block;
   flex-direction: column;
 }
 
 .form-input {
   display: flex;
   position: relative;
-
   padding-left: 42px;
 }
 
-.conditions input[type='checkbox'] {
+.input-relative {
+  position: relative;
 }
 
-.icon-name {
+.conditions input[type="checkbox"] {
+}
+
+.icon-name,
+.icon-tel,
+.icon-email {
   position: absolute;
   top: 50%;
   left: 15px;
@@ -802,7 +808,6 @@ ol {
   display: inline-block;
   width: 12px;
   height: 12px;
-
 }
 
 /* .icon-name-span {
@@ -819,8 +824,8 @@ ol {
   border-radius: 4px;
 }
 
-.form-field:focus-within > .form-input {
+/* .form-field:focus-within > .form-input {
   border: 1px solid #2196F3;
   box-sizing: border-box;
   border-radius: 4px;
-}
+} */
