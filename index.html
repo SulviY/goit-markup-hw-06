@@ -447,62 +447,71 @@
                     </use>
                 </svg>
             </button>
+            <form action="" class="form js-speaker-form">
+                <h3 class="form-title">
+                    Оставьте свои данные, мы вам перезвоним
+                </h3>
+                <label class="form-field">
+                    <div class="form-field-text">
+                        Имя
+                    </div>
+                    <div class="input-relative">
+                        <input type="text" name="name" placeholder=" " class="form-input">
+                        <svg class="icon">
+                            <use href="./images/icons.svg#icon-name"></use>
+                        </svg>
+                    </div>                
+                </label>
+    
+                <label class="form-field">
+                    <div class="form-field-text">
+                        Телефон
+                    </div>
+                    <div class="input-relative">
+                        <input type="tel" name="tel" placeholder=" " class="form-input">
+                        <svg class="icon">
+                            <use href="./images/icons.svg#icon-tel"></use>
+                        </svg>
+                    </div>
+                </label>
+    
+                <label class="form-field">
+                    <div class="form-field-text">
+                        Почта
+                    </div>
+                    <div class="input-relative">
+                        <input type="email" name="email" placeholder=" " class="form-input">
+                        <svg class="icon">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </div>
+                </label>
+    
+                <label class="form-field">
+                    <div class="form-field-text">
+                        Комментарий
+                    </div>
+                    <textarea name="comment" class="comment" placeholder="Введите текст"></textarea>    
+                </label>
+        
+                <div class="conditions">                
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="conditions" value="conditions" class="checkbox">
+                        <svg class="checkbox-icon">
+                            <use href="./images/icons.svg#icon-checked"></use>
+                        </svg>
+                        <div class="checkbox-text">
+                            Соглашаюсь с рассылкой и принимаю <a href="#" class="conditions-link">Условия договора</a>
+                        </div>
+                    </label>
+                </div>
+                   
+                <button type="submit" class="send-btn">Отправить</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
 
-   
-    <div> 
-        <form action="" class="form js-speaker-form">
-            <p>
-                Оставьте свои данные, мы вам перезвоним
-            </p>
-
-            <label class="form-field">
-                Имя
-                <div class="input-relative">
-                    <input type="text" name="name" placeholder=" " class="form-input">
-                    <svg class="icon">
-                        <use href="./images/icons.svg#icon-name"></use>
-                    </svg>
-                </div>                
-            </label>
-
-            <label class="form-field">
-                Телефон
-                <div class="input-relative">
-                    <input type="tel" name="tel" placeholder=" " class="form-input">
-                    <svg class="icon">
-                        <use href="./images/icons.svg#icon-tel"></use>
-                    </svg>
-                </div>
-            </label>
-
-            <label class="form-field">
-                Почта
-                <div class="input-relative">
-                    <input type="email" name="email" placeholder=" " class="form-input">
-                    <svg class="icon">
-                        <use href="./images/icons.svg#icon-email"></use>
-                    </svg>
-                </div>
-            </label>
-
-            <label class="form-field">
-                Комментарий
-                <textarea name="comment" class="comment" placeholder="Введите текст"></textarea>    
-            </label>
-    
-            <div class="conditions form-field">                
-                <label class="checkbox-label">
-                    <input type="checkbox" name="conditions" value="conditions" class="checkbox">
-                    Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
-                </label>
-            </div>
-               
-            <button type="submit">Отправить</button>
-        </form>
-    </div>
 
 </body>
 </html>
