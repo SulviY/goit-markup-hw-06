@@ -420,11 +420,21 @@
                 </ul>
             </div>
             <div class="subscription">
-                <p>подпишитесь на рассылку</p>
-                <label for="mail"></label>
-                <input type="email" name="mail" id="mail" placeholder="E-mail">
-                
-                <button type="submit">Подписаться</button>
+                <p class="subscription-title">подпишитесь на рассылку</p>
+                <div class="subscription-form">
+                    <label>
+                        <input type="email" name="mail" placeholder="E-mail" class="subscription-input-email">
+                    </label>                
+                    <button type="submit" class="subscription-btn">
+                        <span class="subscription-text">
+                            Подписаться
+                        </span>
+                        <svg class="subscription-telegram-icon">
+                            <use href="./images/icons.svg#icon-telegram">
+                            </use>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
     </footer>
@@ -452,7 +462,7 @@
                 Имя
                 <div class="input-relative">
                     <input type="text" name="name" placeholder=" " class="form-input">
-                    <svg class="icon-name">
+                    <svg class="icon">
                         <use href="./images/icons.svg#icon-name"></use>
                     </svg>
                 </div>                
@@ -462,7 +472,7 @@
                 Телефон
                 <div class="input-relative">
                     <input type="tel" name="tel" placeholder=" " class="form-input">
-                    <svg class="icon-tel">
+                    <svg class="icon">
                         <use href="./images/icons.svg#icon-tel"></use>
                     </svg>
                 </div>
@@ -472,24 +482,24 @@
                 Почта
                 <div class="input-relative">
                     <input type="email" name="email" placeholder=" " class="form-input">
-                    <svg class="icon-email">
+                    <svg class="icon">
                         <use href="./images/icons.svg#icon-email"></use>
                     </svg>
                 </div>
             </label>
+
+            <label class="form-field">
+                Комментарий
+                <textarea name="comment" class="comment" placeholder="Введите текст"></textarea>    
+            </label>
     
-            <div class="from-field">
-                <label for="comment">Комментарий</label>
-                <textarea name="comment" id="comment" class="comment" placeholder="Введите текст"></textarea>    
-            </div>
-    
-            <div class="conditions form-field">
-                <input type="checkbox" name="conditions" value="conditions" id="option-conditions">
-                <label for="conditions">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+            <div class="conditions form-field">                
+                <label class="checkbox-label">
+                    <input type="checkbox" name="conditions" value="conditions" class="checkbox">
+                    Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
                 </label>
             </div>
-            
-    
+               
             <button type="submit">Отправить</button>
         </form>
     </div>
