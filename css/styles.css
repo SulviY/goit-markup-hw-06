@@ -40,6 +40,7 @@ ol {
 }
 
 .section {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -110,7 +111,6 @@ ol {
   position: relative;
   padding-top: 25px;
   padding-bottom: 25px;
-  margin-bottom: 94px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -175,6 +175,10 @@ ol {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  margin-top: auto;
+  margin-right: auto;
+  margin-left: auto;
 
   background: var(--background-color);
   align-items: center;
@@ -188,12 +192,6 @@ ol {
     url(../images/hero/bg-img.jpg);
   background-size: cover;
   background-position: 50% 50%;
-
-  max-width: 1600px;
-  margin-top: auto;
-  margin-right: auto;
-  margin-bottom: 94px;
-  margin-left: auto;
 }
 
 .hero-title {
@@ -556,6 +554,10 @@ ol {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+}
+
+.features {
+  padding-bottom: 0px;
 }
 
 .features-list-item-box {
